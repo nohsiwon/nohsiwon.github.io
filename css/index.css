@@ -1,0 +1,1283 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-style: normal;
+    unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+    font-family: 'Galmuri11';
+    src: url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css') format('woff');
+
+    font-style: normal;
+    unicode-range: U+0041-005A;
+    unicode-range: U+0061-007A;
+}
+
+@media (min-width:500px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (min-width:1000px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1500px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+* {
+    font-family: 'DungGeunMo', 'Galmuri11';
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.section .title {
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* common */
+
+.fp-tableCell {
+    display: block;
+}
+
+#fp-nav ul li div:last-child {
+    color: #707070 !important;
+}
+
+/* fp */
+
+.intro>div {
+    background-color: #DFF8FF;
+    position: relative;
+}
+
+.intro>div>div {
+    position: absolute;
+}
+
+.intro .sun {
+    top: 5%;
+    left: 7%;
+    width: 8%;
+    transition: all 2s linear;
+}
+
+.intro .sunScale {
+    scale: 1.1;
+    transition: all 2s linear;
+}
+
+.intro .cloud_01 {
+    top: 11%;
+    left: 9%;
+    width: 13%;
+    transition: all 3s linear
+}
+
+.intro .cloudMove1 {
+    top: 14%;
+    transition: all 3s linear;
+}
+
+.intro .cloud_02 {
+    top: 8%;
+    left: 50%;
+    width: 8.5%;
+    transition: all 2s linear;
+}
+
+.intro .cloudMove2 {
+    top: 10%;
+    transition: all 2s linear;
+}
+
+.intro .cloud_03 {
+    left: 80%;
+    top: 15%;
+    width: 12.5%;
+    transition: all 4s linear;
+}
+
+.intro .cloudMove3 {
+    top: 17.5%;
+    transition: all 4s linear;
+}
+
+.intro .tree {
+    bottom: -0.2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14.5%;
+}
+
+.intro .text_01 {
+    bottom: 15%;
+    left: 25%;
+    transform: translateX(-50%);
+    color: #428DAE;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.intro .text_02 {
+    bottom: 15%;
+    left: 75%;
+    transform: translateX(-50%);
+    color: #428DAE;
+    font-size: 2.3rem;
+}
+
+/* intro */
+
+.link>div {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: center;
+}
+
+.link>div>div {
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
+    font-size: 1.7rem;
+}
+
+.link .winterLink {
+    background-color: #E9E9E9;
+    color: #666666;
+    position: relative;
+}
+
+.link .springLink {
+    background-color: #FFDDDA;
+    color: #FF6D6D;
+    position: relative;
+
+}
+
+.link .fallLink {
+    background-color: #FFD98F;
+    color: #FFA200;
+    position: relative;
+
+}
+
+.link .summerLink {
+    background-color: #ABDAF8;
+    color: #006FFF;
+    position: relative;
+
+}
+
+.link>div .linkBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+}
+
+.link>div .season {
+    font-size: 1.7rem;
+    margin-bottom: 1.25%;
+}
+
+.link>div .detail {
+    font-size: 3.3rem;
+    position: relative;
+}
+
+.link .winterLink .detail .img {
+    position: absolute;
+    top: -9%;
+    left: -6%;
+    width: 12%;
+    z-index: -1;
+}
+
+.link .springLink .detail .img {
+    position: absolute;
+    top: -10%;
+    left: -4.7%;
+    width: 9%;
+    z-index: -1;
+}
+
+.link .fallLink .detail .img {
+    position: absolute;
+    top: -13%;
+    left: -10%;
+    width: 12%;
+    z-index: -1;
+    transform: rotate(-45deg);
+}
+
+.link .summerLink .detail .img {
+    position: absolute;
+    top: -5%;
+    left: -19%;
+    width: 24%;
+    z-index: -1;
+}
+
+.link .tree {
+    position: absolute;
+    width: 100% !important;
+    height: 104% !important;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.link .tree img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* link */
+
+.spring>div {
+    background-color: #FFDDDA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.spring .title {
+    position: relative;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #FF6D6D;
+    z-index: 1;
+}
+
+.spring .title .titleImg {
+    position: absolute;
+    top: -10%;
+    left: -4.7%;
+    width: 9%;
+    z-index: -1;
+}
+
+.spring .detailBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    display: flex;
+    gap: 3%;
+    z-index: 1;
+}
+
+.spring .detailBox .img {
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.spring .detailBox .text {
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.spring .detailBox .text .textBox {
+    padding: 5%;
+}
+
+.spring .detailBox .text .myTitle {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.spring .detailBox .text .myDetail {
+    font-size: 0.7rem;
+    margin-bottom: 8%;
+}
+
+.spring .detailBox .text .myDetail .name {
+    color: #FF6D6D;
+    font-size: 0.9rem;
+}
+
+.spring .detailBox .text .me {
+    font-size: 0.7rem;
+}
+
+.spring .detailBox .text .myList {
+    font-size: 0.6rem;
+}
+
+.spring .detailBox .text .myList li {
+    margin-bottom: 3%;
+}
+
+.spring .element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.spring .element>div {
+    position: absolute;
+}
+
+.spring .element .springTree {
+    bottom: -0.2%;
+    left: 4.15%;
+    width: 14%;
+}
+
+.spring .element .spring_c {
+    bottom: 0;
+    right: 4%;
+    width: 11%;
+    transition: right 5s linear;
+}
+
+.spring .element .springMove {
+    right: 12%;
+    transition: right 5s linear;
+}
+
+.spring .element .rotate {
+    transform: rotateY(180deg);
+}
+
+.spring .element .spring_f01 {
+    top: -10%;
+    left: 50%;
+    width: 4%;
+}
+
+.spring .element .spring_f02 {
+    top: -50%;
+    left: 100%;
+    width: 4%;
+}
+
+.spring .element .spring_f03 {
+    top: -20%;
+    left: 70%;
+    width: 4%
+}
+
+.spring .element .spring_f04 {
+    top: -30%;
+    left: 88%;
+    width: 4%
+}
+
+.spring .element .spring_f05 {
+    top: -80%;
+    left: 43%;
+    width: 4%;
+}
+
+.spring .element .spring_f06 {
+    top: -90%;
+    left: 25%;
+    width: 2%;
+}
+
+.spring .element .spring_f07 {
+    top: -70%;
+    left: 66%;
+    width: 2%;
+}
+
+.spring .element .spring_f08 {
+    top: -25%;
+    left: 30%;
+    width: 2%;
+}
+
+.spring .element .spring_f09 {
+    top: -33%;
+    left: 56%;
+    width: 2%;
+}
+
+.spring .element .spring_f10 {
+    top: -55%;
+    left: 68%;
+    width: 2%;
+}
+
+.spring .element .springLeft1 {
+    left: calc(50% - 30%);
+    top: 100%;
+    transition: all 7s linear;
+}
+
+.spring .element .springLeft2 {
+    left: calc(100% - 30%);
+    top: 100%;
+    transition: all 4s linear;
+}
+
+.spring .element .springLeft3 {
+    left: calc(70% - 30%);
+    top: 100%;
+    transition: all 12s linear;
+}
+
+.spring .element .springLeft4 {
+    left: calc(88% - 30%);
+    top: 100%;
+    transition: all 15s linear;
+}
+
+.spring .element .springLeft5 {
+    left: calc(43% - 30%);
+    top: 100%;
+    transition: all 9s linear;
+}
+
+.spring .element .springLeft6 {
+    left: calc(25% - 30%);
+    top: 100%;
+    transition: all 6s linear;
+}
+
+.spring .element .springLeft7 {
+    left: calc(66% - 30%);
+    top: 100%;
+    transition: all 12s linear;
+}
+
+.spring .element .springLeft8 {
+    left: calc(30% - 30%);
+    top: 100%;
+    transition: all 7s linear;
+}
+
+.spring .element .springLeft9 {
+    left: calc(56% - 30%);
+    top: 100%;
+    transition: all 5s linear;
+}
+
+.spring .element .springLeft10 {
+    left: calc(68% - 30%);
+    top: 100%;
+    transition: all 10s linear;
+}
+
+/* spring */
+
+.summer>div {
+    background-color: #ABDAF8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.summer .title {
+    position: relative;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #006FFF;
+    z-index: 1;
+}
+
+.summer .title .titleImg {
+    position: absolute;
+    top: -4%;
+    left: -19%;
+    width: 24%;
+    z-index: -1;
+}
+
+.summer .detailBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding: 3% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.summer .detailBox>div {
+    width: 11%;
+}
+
+.summer .detailBox>div .skillImg {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+}
+
+.summer .detailBox>div .skillPercent .text {
+    font-size: 1.7rem;
+    text-align: center;
+    color: #006FFF;
+    margin-bottom: 10%;
+}
+
+.summer .detailBox>div .skillPercent {
+    width: 100%;
+    height: 100%
+}
+
+.summer .detailBox>div .skillPercent .waterBox {
+    width: 100%;
+    height: 130px;
+    border: 1px solid #707070;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+}
+
+.summer .detailBox>div .skillPercent .waterBox .waters1 {
+    transition: all 1s;
+}
+
+.summer .detailBox>div .skillPercent .waterBox .waters2 {
+    height: 0 !important;
+}
+
+.summer .detailBox>div .skillPercent .waterBox .water1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: #ABDAF8;
+    border-radius: 0 0 20px 20px;
+}
+
+.summer .detailBox>div .skillPercent .waterBox .water2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: #ABDAF8;
+    border-radius: 0 0 20px 20px;
+}
+
+.summer .detailBox>div .skillPercent .waterBox .water3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: #ABDAF8;
+    border-radius: 0 0 20px 20px;
+}
+
+.summer .detailBox>div .skillPercent .waterBox .water4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #ABDAF8;
+    border-radius: 0 0 20px 20px;
+}
+
+.summer .detailBox>div .skillPercent .waterBox .water5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #ABDAF8;
+    border-radius: 0 0 20px 20px;
+}
+
+.summer .element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.summer .element>div {
+    position: absolute;
+}
+
+.summer .element .summer_c1 {
+    top: 13%;
+    left: 5%;
+    width: 13%;
+    transform: rotateY(180deg);
+    transition: left 10s;
+}
+
+.summer .element .summer_c2 {
+    top: 40%;
+    right: 3%;
+    width: 11%;
+    transform: rotateY(0deg);
+    transition: right 7s;
+}
+
+.summer .element .summer_c3 {
+    bottom: 3%;
+    right: 15%;
+    width: 15%;
+    transform: rotateY(0deg);
+    transition: right 12s;
+}
+
+.summer .element .summerMove1 {
+    left: 18%;
+    transition: left 10s;
+}
+
+.summer .element .summerMove2 {
+    right: 17%;
+    transition: right 5s linear;
+}
+
+.summer .element .summerMove3 {
+    right: 50%;
+    transition: right 12s;
+}
+
+.summer .element .rotate1 {
+    transform: rotateY(0deg);
+}
+
+.summer .element .rotate2 {
+    transform: rotateY(180deg);
+}
+
+.summer .element .summer_1 {
+    bottom: 3%;
+    left: 2%;
+    width: 7%;
+}
+
+.summer .element .summer_2 {
+    bottom: 3%;
+    left: 10%;
+    width: 5%;
+}
+
+.summer .element .summer_3 {
+    bottom: 3%;
+    left: 16%;
+    width: 3%;
+}
+
+.summer .element .summer_4 {
+    bottom: 3%;
+    right: 1%;
+    width: 7%;
+    transform: rotate(-45deg);
+}
+
+.summer .element .summer_5_1 {
+    bottom: -10%;
+    left: 5%;
+    width: 3%;
+}
+
+.summer .element .summer_5_2 {
+    bottom: -20%;
+    left: 70%;
+    width: 3.3%;
+}
+
+.summer .element .summer_5_3 {
+    bottom: -30%;
+    left: 20%;
+    width: 2.5%;
+}
+
+.summer .element .summer_5_4 {
+    bottom: -30%;
+    left: 60%;
+    width: 4%;
+}
+
+.summer .element .summer_5_5 {
+    bottom: -20%;
+    left: 90%;
+    width: 4%;
+}
+
+.summer .element .summer_5_6 {
+    bottom: -50%;
+    left: 34%;
+    width: 2%;
+}
+
+.summer .element .waterUp1 {
+    bottom: 110%;
+    transition: all 10s ease-in;
+}
+
+.summer .element .waterUp2 {
+    bottom: 110%;
+    transition: all 7s ease-in;
+}
+
+.summer .element .waterUp3 {
+    bottom: 110%;
+    transition: all 12s ease-in;
+}
+
+/* summer */
+
+.fall>div {
+    background-color: #FFD98F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.fall .title {
+    position: relative;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #FFA200;
+    z-index: 1;
+}
+
+.fall .title .titleImg {
+    position: absolute;
+    top: -13%;
+    left: -11%;
+    width: 12%;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.fall .detailBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.fall .detailBox .detailBoxArrow {
+    position: relative;
+}
+
+.fall .detailBox .detail {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.fall .detailBox .projectSlide {
+    width: 100%;
+    height: 100%;
+}
+
+.fall .detailBox .projectSlide .projectLink {
+    position: relative;
+}
+
+.fall .detailBox .projectSlide .projectLink:hover .back {
+    opacity: 1;
+}
+
+.fall .detailBox .projectSlide .projectLink .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.fall .detailBox .projectSlide .projectLink .back .projectTitle {
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.fall .detailBox .projectSlide .projectLink .back .projectSkill {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.fall .detailBox .projectSlide .projectLink .back .projectSkill>div {
+    margin-bottom: 3%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.fall .detailBox .projectSlide .projectLink .back .projectDetail {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fall .detailBox .projectSlide .projectLink .back .projectDetail .detail1 {
+    margin-bottom: 1%;
+    font-size: 0.9rem;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+.fall .detailBox .projectSlide .projectLink .back .projectDetail .detail2 {
+    font-size: 0.8rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.fall .detailBox .detailBoxArrow .prev {
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    width: 10%;
+    transform: translateY(-50%);
+}
+
+/* detail박스 다시맞추기 */
+.fall .detailBox .detailBoxArrow .next {
+    position: absolute;
+    top: 50%;
+    right: -15%;
+    width: 10%;
+    transform: translateY(-50%);
+}
+
+.fall .element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fall .element>div {
+    position: absolute;
+}
+
+.fall .element .fallTree {
+    bottom: -0.5%;
+    right: 2%;
+    width: 15%;
+}
+
+.fall .fall_c {
+    position: absolute;
+    top: 80%;
+    left: -20%;
+    width: 20%
+}
+
+.fall .rotate {
+    transform: rotate(-360deg);
+    transition: all 0.5s;
+}
+
+.fall .rotate2 {
+    transform: rotate(360deg);
+    transition: all 0.5s;
+}
+
+.fall .element .fall_1 {
+    top: -20%;
+    left: 10%;
+    width: 3.57%;
+    transform: rotate(-110deg);
+}
+
+.fall .element .fall_2 {
+    top: -50%;
+    left: 30%;
+    width: 1.68%;
+    transform: rotate(-100deg);
+}
+
+.fall .element .fall_3 {
+    top: -10%;
+    left: 50%;
+    width: 3.68%;
+    transform: rotate(-79deg);
+}
+
+.fall .element .fall_4 {
+    top: -32%;
+    left: 80%;
+    width: 4.21%;
+    transform: rotate(50deg);
+}
+
+.fall .element .fall_5 {
+    top: -70%;
+    left: 22%;
+    width: 3.15%;
+    transform: rotate(160deg);
+}
+
+.fall .element .fall_6 {
+    top: -12%;
+    left: 88%;
+    width: 2.31%;
+    transform: rotate(70deg);
+}
+
+.fall .element .fall_7 {
+    top: -44%;
+    left: 67%;
+    width: 3.94%;
+    transform: rotate(40deg);
+}
+
+.fall .element .fall_8 {
+    top: -32%;
+    left: 33%;
+    width: 2.63%;
+    transform: rotate(-32deg);
+}
+
+.fall .element .left1 {
+    transform: rotate(-120deg);
+    top: 40%;
+    left: calc(10% - 2%);
+    transition: all 7s linear;
+}
+
+.fall .element .right1 {
+    transform: rotate(-100deg);
+    top: 100%;
+    left: calc(10% + 2%);
+    transition: all 7s linear;
+}
+
+.fall .element .left2 {
+    transform: rotate(-110deg);
+    top: 25%;
+    left: calc(30% - 2%);
+    transition: all 6s linear;
+}
+
+.fall .element .right2 {
+    transform: rotate(-90deg);
+    top: 100%;
+    left: calc(30% + 2%);
+    transition: all 6s linear;
+}
+
+.fall .element .left3 {
+    transform: rotate(-89deg);
+    top: 45%;
+    left: calc(50% - 2%);
+    transition: all 9s linear;
+}
+
+.fall .element .right3 {
+    transform: rotate(-69deg);
+    top: 100%;
+    left: calc(50% + 2%);
+    transition: all 9s linear;
+}
+
+.fall .element .left4 {
+    transform: rotate(40deg);
+    top: 34%;
+    left: calc(80% - 2%);
+    transition: all 3.5s linear;
+}
+
+.fall .element .right4 {
+    transform: rotate(60deg);
+    top: 100%;
+    left: calc(80% + 2%);
+    transition: all 3.5s linear;
+}
+
+.fall .element .left5 {
+    transform: rotate(150deg);
+    top: 15%;
+    left: calc(22% - 2%);
+    transition: all 5s linear;
+}
+
+.fall .element .right5 {
+    transform: rotate(170deg);
+    top: 100%;
+    left: calc(22% + 2%);
+    transition: all 5s linear;
+}
+
+.fall .element .left6 {
+    transform: rotate(60deg);
+    top: 44%;
+    left: calc(88% - 2%);
+    transition: all 10s linear;
+}
+
+.fall .element .right6 {
+    transform: rotate(80deg);
+    top: 100%;
+    left: calc(88% + 2%);
+    transition: all 10s linear;
+}
+
+.fall .element .left7 {
+    transform: rotate(30deg);
+    top: 28%;
+    left: calc(67% - 2%);
+    transition: all 3s linear;
+}
+
+.fall .element .right7 {
+    transform: rotate(50deg);
+    top: 100%;
+    left: calc(67% + 2%);
+    transition: all 3s linear;
+}
+
+.fall .element .left8 {
+    transform: rotate(-42deg);
+    top: 32%;
+    left: calc(33% - 2%);
+    transition: all 7.5s linear;
+}
+
+.fall .element .right8 {
+    transform: rotate(-22deg);
+    top: 100%;
+    left: calc(33% + 2%);
+    transition: all 7.5s linear;
+}
+
+
+
+/* fall */
+
+.winter>div {
+    background-color: #E9E9E9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.winter .title {
+    position: relative;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #666666;
+    z-index: 1;
+}
+
+.winter .title .titleImg {
+    position: absolute;
+    top: -6%;
+    left: -7%;
+    width: 12%;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.winter .detailBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #666666;
+    text-align: center;
+    width: 50%;
+    border-radius: 20px;
+    padding: 3% 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.winter .detailBox .telImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14%;
+    margin-bottom: 1%;
+}
+
+.winter .detailBox .telImg .img {
+    width: 16%;
+}
+
+.winter .detailBox .telNum {
+    margin-bottom: 4%;
+}
+
+.winter .detailBox .mailImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    margin-bottom: 1%;
+}
+
+.winter .detailBox .mailImg .img {
+    width: 14%
+}
+
+.winter .element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.winter .element>div {
+    position: absolute;
+}
+
+.winter .element .winterTree {
+    right: 5%;
+    bottom: 0;
+    width: 16%;
+}
+
+.winter .detailBox .winter_c {
+    position: absolute;
+    top: 75%;
+    left: -10%;
+    width: 30%;
+    z-index: 2;
+}
+
+.winter .detailBox .dance {
+    transform: rotateY(180deg);
+}
+
+.winter .detailBox .snow1 {
+    left: 60%;
+    top: -10%;
+    width: 2.63%;
+}
+
+.winter .element .snow2 {
+    left: 10%;
+    top: -20%;
+    width: 2.26%;
+}
+
+.winter .element .snow3 {
+    left: 40%;
+    top: -30%;
+    width: 4.63%
+}
+
+.winter .element .snow4 {
+    left: 90%;
+    top: -50%;
+    width: 1.84%
+}
+
+.winter .element .snow5 {
+    left: 20%;
+    top: -90%;
+    width: 2.89%
+}
+
+.winter .element .snow6 {
+    left: 27%;
+    top: -22%;
+    width: 4.21%
+}
+
+.winter .element .snow7 {
+    left: 88%;
+    top: -12%;
+    width: 1.57%;
+}
+
+.winter .element .snow8 {
+    left: 92%;
+    top: -23%;
+    width: 3.68%
+}
+
+.winter .element .snow9 {
+    left: 45%;
+    top: -72%;
+    width: 5.26%;
+}
+
+.winter .element .down1 {
+    top: 100%;
+    transition: top 12s linear;
+}
+
+.winter .element .down2 {
+    top: 100%;
+    transition: top 7s linear;
+}
+
+.winter .element .down3 {
+    top: 100%;
+    transition: top 10s linear;
+}
+
+.winter .element .up {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: white;
+    z-index: 9999;
+}
+
+/* winter */

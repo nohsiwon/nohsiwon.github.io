@@ -1,0 +1,21 @@
+상품 디테일
+
+color_01 ~ color_04 = 왼쪽 상품 사진
+
+bag = 왼쪽 상품5번째 사진
+
+londi_color = 오른쪽 컬러별 상품 사진
+
+
+SNS
+
+sns_01 ~ sns_03 = sns 사진
+
+
+비슷한 제품목록
+
+recommend_01 = 모마티 01
+
+recommend_02 = 릴리트 01
+
+recommend_03 = 밀 01

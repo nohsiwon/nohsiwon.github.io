@@ -1,0 +1,35 @@
+BANNER
+
+visual_01 ~ visual_04 = 메인비주얼
+
+
+KEYWORD RANKING
+
+rank_00_01 ~ rank_00_05 = 글자밑에 상품 사진
+
+rank_00_06 = 오른쪽의 큰 착용 사진
+
+rank_00_07 ~ rank_00_09 = 오른쪽의 작은 사진 3개
+
+
+PRODUCT
+
+sun_01 ~ sun_10 = 선글라스 상품
+
+glass_01 ~ glass_10 = 안경 상품
+
+
+COLLABO
+
+collabo_01 = 젠틀 가든
+
+collabo_02 = 몽클레르
+
+collabo_03 = SON 7
+
+collabo_04 = HBA
+
+
+SNS
+
+sns_01 ~ sns_09 = sns 사진

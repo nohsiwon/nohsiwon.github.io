@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.href {
+    color: #78ECC5;
+}
+
+/* ---common--- */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 77px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.header .logo {
+    width: 250px;
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+.header .gnb {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.header .gnb li {
+    width: 100px;
+    text-align: center;
+}
+
+
+.header .fullDownMenuBox {
+    position: fixed;
+    top: 77px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.header .fullDownMenuBox .fullDownMenu {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.header .fullDownMenuBox .fullDownMenu>div {
+    width: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header .fullDownMenuBox .fullDownMenu>div>div {
+    margin-bottom: 10px;
+}
+
+.header .fullDownMenuBox .empty1 {
+    width: 250px;
+    margin-left: 50px;
+}
+
+.header .fullDownMenuBox .empty2 {
+    width: 250px;
+    margin-right: 50px;
+}
+
+.header .lnb {
+    display: flex;
+    width: 250px;
+    font-size: 12px;
+    margin-right: 50px;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .lnb i {
+    font-size: 15px;
+}
+
+.header .searchBack {
+    position: absolute;
+    top: 77px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    transition: all 0.3s;
+}
+
+.header .searchBackOpen {
+    height: 480px;
+}
+
+.header .searchBack .search {
+    width: 1394px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+.header .searchBack .search .searchTitle {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .searchBack .search .searchActive {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.header .searchBack .search .searchActive .searchInput {
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 0 5px;
+    border: 2px solid black;
+    transition: all 0.3s;
+}
+
+.header .searchBack .search .searchActive .icon {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.header .searchBack .search .best {
+    margin-top: 15px;
+}
+
+.header .searchBack .search .best .bestTitle {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header .searchBack .search .best .bestImg {
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.header .searchBack .search .best .bestImg>div .img {
+    width: 150px;
+}
+
+.header .searchBack .search .best .bestImg>div .img img {
+    width: 100%;
+}
+
+/* ---header--- */
+
+.wrap {
+    width: 1394px;
+    margin: 177px auto 0;
+}
+
+.productBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.productBox .productImgBox {
+    width: 926px;
+}
+
+.productBox .productImgBox>div {
+    display: flex;
+    height: 458px;
+    margin-bottom: 10px;
+}
+
+.productBox .productImgBox>div>div:first-child {
+    margin-right: 10px;
+}
+
+.productBox .productDetailBox {
+    width: 400px;
+}
+
+.productBox .productDetailBox .titleBox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.productBox .productDetailBox .titleBox .title {
+    flex: 1;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.productBox .productDetailBox .titleBox .price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.productBox .productDetailBox .productColor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.productBox .productDetailBox .productColor div {
+    width: 92px;
+    margin-bottom: 10px;
+}
+
+.productBox .productDetailBox .detail {
+    margin-bottom: 40px;
+}
+
+.productBox .productDetailBox .btnBox {
+    margin-bottom: 40px;
+}
+
+.productBox .productDetailBox .btnBox div {
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 27.5px;
+    border: 1px solid #707070;
+    margin-bottom: 10px;
+}
+
+.productBox .productDetailBox .btnBox div:first-child {
+    background-color: black;
+    color: white;
+}
+
+.productBox .productDetailBox .service {
+    margin-bottom: 50px;
+}
+
+.under {
+    text-decoration: underline;
+}
+
+.accodian:first-child {
+    border-top: 1px solid #ddd;
+}
+
+.accodian {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.accodian .accodianTitle {
+    display: flex;
+}
+
+.accodian .accodianTitle div:first-child {
+    flex: 1;
+}
+
+.accodian .accodianTitle .arrow {
+    transform: rotate(0deg);
+    transition: all 0.4s;
+}
+
+.accodian .accodianTitle .arrowReverse {
+    transform: rotate(-180deg);
+    transition: all 0.4s;
+}
+
+.accodianDetail {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+
+.accodianDetail>div {
+    margin-bottom: 10px;
+}
+
+.accodianDetail>div>div {
+    margin-bottom: 3px;
+}
+
+.opa {
+    opacity: 0;
+}
+
+.accodianHeight {
+    max-height: 380px;
+    transition: all 0.6s;
+    margin-top: 15px;
+}
+
+.styleBox {
+    margin-bottom: 120px;
+}
+
+.styleBox .titleBox {
+    margin-bottom: 40px;
+}
+
+.styleBox .titleBox .styleTitle {
+    font-size: 20px;
+}
+
+.styleBox .snsBox {
+    display: flex;
+}
+
+.styleBox .snsBox>div {
+    margin-right: 10px;
+}
+
+.styleBox .snsBox>div .img {
+    margin-bottom: 20px;
+}
+
+.recommend {
+    margin-bottom: 120px;
+}
+
+.recommend .titleBox {
+    margin-bottom: 40px;
+}
+
+.recommend .recoPro {
+    display: flex;
+}
+
+.recommend .recoPro .product {
+    margin-right: 10px;
+}
+
+.recommend .recoPro .product .img {
+    margin-bottom: 20px;
+}
+
+.recommend .recoPro .product .text .title {
+    font-size: 13px;
+}
+
+.recommend .recoPro .product .text .price {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.recommend .recoPro .product .text .color {
+    font-size: 11px;
+}
+
+/* ---recommendBox--- */
+
+
+.fixedBox {
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    z-index: 99999;
+}
+
+.fixedBox div {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid #EBEBEB;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.fixedBox div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fixedBox img {
+    width: auto
+}
+
+.fixedBox div:hover {
+    border: 2px solid black;
+    line-height: 58px;
+}
+
+.fixedBox div .off {
+    z-index: 1;
+}
+
+.fixedBox div .on {
+    z-index: -1;
+}
+
+.fixedBox div:hover .off {
+    z-index: -1;
+}
+
+.fixedBox div:hover .on {
+    z-index: 1;
+}
+
+
+/* ---fixedBox--- */
+
+.shoppingBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    opacity: 0;
+    z-index: 999999;
+}
+
+.shoppingBox .shopping {
+    display: flex;
+    flex-direction: column;
+    width: 482px;
+    height: 100vh;
+    margin-left: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.shoppingBox .shopping .titleBox {
+    display: flex;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.shoppingBox .shopping .titleBox .title {
+    flex: 1;
+
+}
+
+.shoppingBox .shopping .items {
+    height: 100vh;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.shoppingBox .shopping .buyBox {
+    padding: 30px 0;
+}
+
+.shoppingBox .shopping .buyBox .deli {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px
+}
+
+.shoppingBox .shopping .buyBox .sum {
+    display: flex;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.shoppingBox .shopping .buyBox>div>div:first-child {
+    flex: 1;
+}
+
+.shoppingBox .shopping .buyBox .buy {
+    background-color: #707070;
+    color: white;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.shoppingBox .shopping .buyBox .more {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #707070;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* ---shoppingBox--- */
+
+.footer {
+    padding: 0 50px;
+    background-color: black;
+    color: white;
+}
+
+.footer .footerTop {
+    display: flex;
+    padding-top: 50px;
+    margin-bottom: 90px;
+}
+
+.footer .footerTop .logo {
+    flex: 1;
+}
+
+.footer .footerTop .menuBox {
+    display: flex;
+    width: 600px;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.searchText {
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.searchText:focus {
+    outline: none;
+}
+
+.footer .footerTop .menuBox .menu {
+    flex: 1;
+}
+
+.footer .footerTop .menuBox .menu .title {
+    font-size: 16px;
+}
+
+.footer .footerTop .menuBox .menu div {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer .footerTop .menuBox .menu div:last-child {
+    margin-bottom: 0px;
+}
+
+.footer .footerBottom {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    color: #807E7E;
+    padding-bottom: 70px;
+    align-items: center;
+}
+
+.footer .footerBottom .copyright {
+    width: 220px;
+}
+
+.footer .footerBottom .infoBox {
+    width: 100%;
+    display: flex;
+    border-left: 1px solid #807E7E;
+}
+
+.footer .footerBottom .infoBox .info {
+    flex: 1;
+    margin-left: 50px;
+}
+
+.footer .footerBottom .infoBox .info>div {
+    display: flex;
+}

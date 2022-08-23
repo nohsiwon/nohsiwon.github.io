@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <title>menu</title>
+</head>
+
+<body>
+    <header class="header">
+        <input type="checkbox" id="ham">
+        <label for="ham" class="ham"><i class="xi-bars"></i></label>
+        <div class="hamMenu">
+            <label for="ham" class="hamClose"><i class="xi-close"></i></label>
+            <div class="profile">
+                <a href="#!" class="img"><img src="../img/profile.png" alt=""></a>
+                <div class="nickname">닉네임</div>
+                <div class="member">실버 회원</div>
+            </div>
+            <a href="../login/login.html" class="login">로그인</a>
+            <div class="signup">회원가입</div>
+
+            <a href="menu_01_04.html" class="list">
+                <div class="hamIcon"><i class="xi-list"></i></div>
+                <div class="hamText">메뉴</div>
+            </a>
+            <a href="#!" class="list">
+                <div class="hamIcon"><i class="xi-document"></i></div>
+                <div class="hamText">나의 주문</div>
+            </a>
+            <a href="#!" class="list">
+                <div class="hamIcon"><i class="xi-maker"></i></div>
+                <div class="hamText">주소 관리</div>
+            </a>
+            <a href="#!" class="list">
+                <div class="hamIcon"><i class="xi-gift-o"></i></div>
+                <div class="hamText">이벤트</div>
+            </a>
+            <a href="#!" class="list">
+                <div class="hamIcon"><i class="xi-profile-o"></i></div>
+                <div class="hamText">MY</div>
+            </a>
+            <a href="#!" class="list">
+                <div class="hamIcon"><i class="xi-cog"></i></div>
+                <div class="hamText">설정</div>
+            </a>
+        </div>
+        <a href="../main.html" class="logo"><img src="../img/logo.png" alt=""></a>
+        <a href="../shopping_basket/shop.html" class="icon"><i class="xi-cart-o"></i></a>
+    </header>
+    <!-- hedaer -->
+    <div class="routeBox">
+        <div class="route">
+            <a href="../main.html">
+                <i class="xi-home"></i>
+            </a>
+            <div><i class="xi-angle-right"></i></div>
+            <div class="text">식사메뉴</div>
+        </div>
+    </div>
+    <!-- route -->
+    <input type="radio" id="chicken" name="choice">
+    <input type="radio" id="rice" name="choice">
+    <input type="radio" id="side" name="choice">
+    <input type="radio" id="add" name="choice" checked>
+    <div class="menu">
+        <label for="chicken" class="chicken">닭갈비</label>
+        <label for="rice" class="rice">볶음밥</label>
+        <label for="side" class="side">사이드</label>
+        <label for="add" class="add">사리</label>
+    </div>
+    <!-- menu_choice -->
+    <div class="chickenBox">
+        <a href="./order/order_01_01_01.html" class="product">
+            <div class="img"><img src="../img/product_01.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">유가네 닭갈비</div>
+                <div class="sub">유가네만의 매콤한 양념으로 숙성시킨쫄깃한 닭고기와 각종 신선한 채소가어우러진 유가네 메인 메뉴</div>
+                <div class="price">₩ 8,500</div>
+            </div>
+        </a>
+        <a href="./order/order_01_01_02.html" class="product">
+            <div class="img"><img src="../img/product_02.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">치즈 퐁닭</div>
+                <div class="sub">신선한 자연 치즈와 닭갈비의 만남.신개념의 치즈닭갈비 !아. 맛있어라 퐁닭이여.</div>
+                <div class="price">
+                    <div>중 ₩ 22,000</div>
+                    <div>대 ₩ 31,000</div>
+                </div>
+            </div>
+        </a>
+        <a href="./order/order_01_01_03.html" class="product">
+            <div class="img"><img src="../img/product_03.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">로제닭갈비</div>
+                <div class="sub">매콤한 유가네닭갈비에부드러운 크림소스를 더해 부드럽고진~한 맛이 일품인 로제닭갈비</div>
+                <div class="price">
+                    <div>중 ₩ 21,900</div>
+                    <div>대 ₩ 29,000</div>
+                </div>
+            </div>
+        </a>
+        <a href="./order/order_01_01_04.html" class="product">
+            <div class="img"><img src="../img/product_04.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">미소허니닭갈비</div>
+                <div class="sub">달달한 꿀과 맛있는 된장으로 숙성시켜고소하고 달콤한 닭갈비</div>
+                <div class="price">₩ 10,500</div>
+            </div>
+        </a>
+        <a href="./order/order_01_01_05.html" class="product">
+            <div class="img"><img src="../img/product_05.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">쭈~닭갈비</div>
+                <div class="sub">우리 이제 만났어요 ! 타우린이 풍부한 쭈꾸미와닭갈비의 환상의 궁합 !</div>
+                <div class="price">₩ 9,500</div>
+            </div>
+        </a>
+        <a href="./order/order_01_01_06.html" class="product">
+            <div class="img"><img src="../img/product_06.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">반반 닭갈비</div>
+                <div class="sub">꿀과 된장으로 숙성된 미소허니 닭갈비와 유가네만의 매콤한 양념으로 숙성시킨 쫄깃한 닭고기를 콘치즈에 콬 찍어 먹는 반반 닭갈비</div>
+                <div class="price">
+                    <div>중 ₩ 23,000</div>
+                    <div>대 ₩ 31,000</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="riceBox">
+        <a href="./order/order_01_02_01.html" class="product">
+            <div class="img"><img src="../img/product_07.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">오징어새우철판볶음밥</div>
+                <div class="sub">쫄깃쫄깃한 오징어와 고소한 새우 야채와 잘 어울려 깔끔하고 고소한 맛을 내는 유가네 인기메뉴 !</div>
+                <div class="price">₩ 6,500</div>
+            </div>
+        </a>
+        <a href="./order/order_01_02_02.html" class="product">
+            <div class="img"><img src="../img/product_08.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">닭갈비철판볶음밥</div>
+                <div class="sub">닭갈비와 볶음밥을 함께 ! 그 맛을 두배로 즐길 수 있는 닭갈비 볶음밥</div>
+                <div class="price">₩ 6,000</div>
+            </div>
+        </a>
+        <a href="./order/order_01_02_03.html" class="product">
+            <div class="img"><img src="../img/product_09.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">닭야채철판볶음밥</div>
+                <div class="sub">닭고기와 신선한 야채에 양념을 곁들인 밥과 함께 볶은 닭야채 볶음밥.</div>
+                <div class="price">₩ 5,500</div>
+            </div>
+        </a>
+        <a href="./order/order_01_02_04.html" class="product">
+            <div class="img"><img src="../img/product_10.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">낙지새우철판볶음밥</div>
+                <div class="sub">쫄깃한 낙지와 통통한 새우가 더해진 프리미엄 철판볶음밥</div>
+                <div class="price">₩ 6,500</div>
+            </div>
+        </a>
+    </div>
+    <div class="sideBox">
+        <a href="./order/order_01_03_01.html" class="product">
+            <div class="img"><img src="../img/side_01.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">쟁반국수</div>
+                <div class="sub">신선하고 맛있는 갖가지 야채와 과일을 매콤달콤한 양념에 비벼먹는 유가네만의 특별메뉴 !</div>
+                <div class="price">₩ 10,000</div>
+            </div>
+        </a>
+        <a href="./order/order_01_03_02.html" class="product">
+            <div class="img"><img src="../img/side_02.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">물막국수</div>
+                <div class="sub">여름 최고별미 유가네 물막국수 ! 답답하고 짜증날 땐 끝내주게 시원한 유가네 물막국수 한 그릇</div>
+                <div class="price">₩ 6,000</div>
+            </div>
+        </a>
+        <a href="./order/order_01_03_03.html" class="product">
+            <div class="img"><img src="../img/side_04.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">물비빔막국수</div>
+                <div class="sub">매콤새콤 시원한 유가네 물비빔막국수 ! 답답하고 짜증날 땐 끝내주게 시원한 유가네 물비빔막국수 한 그릇</div>
+                <div class="price">₩ 6,000</div>
+            </div>
+        </a>
+        <a href="./order/order_01_03_04.html" class="product">
+            <div class="img"><img src="../img/side_05.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">치즈라볶이</div>
+                <div class="sub">후루룩떡볶이의 LEVEL UP ! 치즈와 라면을 함께 즐기는 치즈라볶이</div>
+                <div class="price">₩ 6,000</div>
+            </div>
+        </a>
+        <a href="./order/order_01_03_05.html" class="product">
+            <div class="img"><img src="../img/side_03.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">날치마요주먹밥</div>
+                <div class="sub">아이들이 좋아하는 영양간식 날치마요주먹밥</div>
+                <div class="price">₩ 4,000</div>
+            </div>
+        </a>
+    </div>
+    <div class="addBox">
+        <a href="#!" class="product">
+            <div class="img"><img src="../img/add_01.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">볶음공기</div>
+                <div class="sub">맛있는 밥에 불맛을 더해 볶은 밥 !</div>
+                <div class="price">₩ 2,000</div>
+            </div>
+        </a>
+        <a href="#!" class="product">
+            <div class="img"><img src="../img/add_02.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">모둠사리</div>
+                <div class="sub">여러가지 사리가 먹고싶을때 먹는 모둠사리 !</div>
+                <div class="price">₩ 4,000</div>
+            </div>
+        </a>
+        <a href="#!" class="product">
+            <div class="img"><img src="../img/add_03.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">라면사리</div>
+                <div class="sub">꼬들꼬들한 라면을 섞어먹고 싶을땐 라면사리 !</div>
+                <div class="price">₩ 1,500</div>
+            </div>
+        </a>
+        <a href="#!" class="product">
+            <div class="img"><img src="../img/add_04.jpg" alt=""></div>
+            <div class="text">
+                <div class="name">모짜렐라치즈</div>
+                <div class="sub">쭉쭉 늘어나는 치즈와 같이 먹고싶다면 모짜렐라치즈 !</div>
+                <div class="price">₩ 2,000</div>
+            </div>
+        </a>
+    </div>
+    <!-- product -->
+    <div class="fixBox">
+        <input type="checkbox" id="fixed">
+        <div class="wingBox">
+            <label for="fixed" class="fixed">
+                <div class="icon"><i class="xi-apps"></i></div>
+            </label>
+            <div class="fixedMenu">
+                <div>
+                    <div class="allMenu">전체메뉴</div>
+                </div>
+                <div class="me">
+                    <div class="box">
+                        <div class="top">식사메뉴</div>
+                        <div class="link">
+                            <a href="../menu/menu_01_01.html">
+                                <div class="fixImg">
+                                    <img src="../img/da.jpg" alt="">
+                                </div>
+                                <div>닭갈비</div>
+                            </a>
+                            <a href="../menu/menu_01_02.html">
+                                <div class="fixImg">
+                                    <img src="../img/bo.jpg" alt="">
+                                </div>
+                                <div>볶음밥</div>
+                            </a>
+                            <a href="../menu/menu_01_03.html">
+                                <div class="fixImg">
+                                    <img src="../img/side_03.jpg" alt="">
+                                </div>
+                                <div>사이드</div>
+                            </a>
+                            <a href="../menu/menu_01_04.html">
+                                <div class="fixImg">
+                                    <img src="../img/add_01.jpg" alt="">
+                                </div>
+                                <div>사리</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="top">도시락</div>
+                        <div class="link">
+                            <a href="../menu/menu_02_01.html">
+                                <div class="fixImg">
+                                    <img src="../img/product_13.jpg" alt="">
+                                </div>
+                                <div>1인분</div>
+                            </a>
+                            <a href="../menu/menu_02_02.html">
+                                <div class="fixImg">
+                                    <img src="../img/product_16.jpg" alt="">
+                                </div>
+                                <div>세트</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="top">밀키트</div>
+                        <div class="link">
+                            <a href="../menu/menu_03_01.html">
+                                <div class="fixImg">
+                                    <img src="../img/product_17.jpg" alt="">
+                                </div>
+                                <div>닭갈비</div>
+                            </a>
+                            <a href="../menu/menu_03_02.html">
+                                <div class="fixImg">
+                                    <img src="../img/product_19.jpg" alt="">
+                                </div>
+                                <div>볶음밥</div>
+                            </a>
+                            <a href="../menu/menu_03_03.html">
+                                <div class="fixImg">
+                                    <img src="../img/product_21.jpg" alt="">
+                                </div>
+                                <div>닭국</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="top">커뮤니티</div>
+                        <div class="link">
+                            <a href="#!">
+                                <div class="fixImg">
+                                    <i class="xi-bell-o"></i>
+                                </div>
+                                <div>새소식</div>
+                            </a>
+                            <a href="#!">
+                                <div class="fixImg">
+                                    <i class="xi-instagram"></i>
+                                </div>
+                                <div>SNS</div>
+                            </a>
+                            <a href="#!">
+                                <div class="fixImg">
+                                    <i class="xi-gift-o"></i>
+                                </div>
+                                <div>이벤트</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="top">MY</div>
+                        <div class="link">
+                            <a href="../shopping_basket/shop.html">
+                                <div class="fixImg">
+                                    <i class="xi-cart-o"></i>
+                                </div>
+                                <div>장바구니</div>
+                            </a>
+                            <a href="#!">
+                                <div class="fixImg">
+                                    <i class="xi-document"></i>
+                                </div>
+                                <div>나의 주문</div>
+                            </a>
+                            <a href="#!">
+                                <div class="fixImg">
+                                    <i class="xi-maker"></i>
+                                </div>
+                                <div>주소관리</div>
+                            </a>
+                            <a href="#!">
+                                <div class="fixImg">
+                                    <i class="xi-profile-o"></i>
+                                </div>
+                                <div>프로필 관리</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="qnaBox">
+                    <div>
+                        <a href="#!" class="qna">
+                            <div>Q&A</div>
+                        </a>
+                        <a href="#!" class="help">
+                            <div>고객센터</div>
+                        </a>
+                    </div>
+                    <label for="fixed" class="fixedClose"><i class="xi-close"></i></label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- fixed -->
+    <footer class="footer">
+        <div class="footerTop">
+            <div class="logo"><img src="../img/logo.png" alt=""></div>
+            <div><a href="#!">개인정보처리방침</a></div>
+            <div>
+                <div><a href="#!">고객센터</a></div>
+                <div><a href="#!">1661-9922</a></div>
+            </div>
+        </div>
+        <div class="footerText">
+            <div>상호 : (주)바이올푸드글로벌</div>
+            <div>주소 : 서울특별시 금천구 서부샛길 606, 대성디폴리스 B동 1205호</div>
+            <div>사업자등록번호 : 119-87-03184 대표 : 권지훈</div>
+            <div class="copyright">COPYRIGHT 2020 BUYALLFOODGLOBAL. ALL RIGHTS RESERVED</div>
+        </div>
+        <div class="sns">
+            <a href="#!">
+                <div><i class="xi-facebook"></i></div>
+            </a>
+            <a href="#!">
+                <div><i class="xi-twitter"></i></div>
+            </a>
+            <a href="#!">
+                <div><i class="xi-youtube-play"></i></div>
+            </a>
+        </div>
+    </footer>
+    <!-- footer -->
+</body>
+
+
+</html>

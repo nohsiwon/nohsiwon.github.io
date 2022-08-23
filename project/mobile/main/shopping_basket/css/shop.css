@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ----------------------------common-------------------------------- */
+.header {
+    display: flex;
+    padding: 0 20px;
+    height: 70px;
+    background-color: #ffaaaa;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .ham {
+    font-size: 40px;
+}
+
+.header .hamMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    overflow: scroll;
+    transition: 0.3s;
+}
+
+.header .hamMenu .hamClose {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 27px;
+}
+
+.header .hamMenu .img {
+    display: block;
+    width: 100px;
+    margin: 36px auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header .hamMenu .profile {
+    text-align: center;
+    color: white;
+}
+
+.header .hamMenu .login {
+    display: block;
+    background-color: yellow;
+    width: calc(100% - 40px);
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30.5px;
+    margin: 10px 20px;
+}
+
+.header .hamMenu .signup {
+    background-color: white;
+    width: calc(100% - 40px);
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30.5px;
+    margin: 0 20px 10px;
+}
+
+.header .hamMenu .list {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+
+.header .hamMenu .list .hamIcon {
+    font-size: 40px;
+    margin-right: 23px;
+}
+
+.header .hamMenu .list .hamText {
+    line-height: 54px;
+    color: white;
+}
+
+#ham {
+    display: none;
+}
+
+#ham:checked~.hamMenu {
+    left: 0
+}
+
+#ham~.hamMenu {
+    left: -100%;
+    background-color: #ffaaaa;
+    z-index: 1;
+}
+
+.header .icon {
+    font-size: 40px;
+}
+
+.header .logo {
+    height: 54px;
+}
+
+.header .logo img {
+    width: auto;
+    height: 100%;
+}
+
+/* --------------------------header---------------------------------- */
+.wrap {
+    margin: 0 20px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 15px;
+}
+
+.choiceBox {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.choiceBox>* {
+    font-weight: bold;
+}
+
+#choice {
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.choice {
+    flex: 1;
+}
+
+/* ----------------------------choice-------------------------------- */
+.productBox {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.productBox .product .productDetail {
+    display: flex;
+}
+
+.productBox .product .productDetail .imgBox {
+    flex: 1;
+}
+
+.productBox .product .productDetail .img {
+    width: 118px;
+}
+
+.productBox .product .productDetail .productText {
+    text-align: center;
+    margin-top: 32.5px;
+
+}
+
+.productBox .product .productDetail .name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.productBox .product .productDetail .text {
+    display: flex;
+    justify-content: center;
+}
+
+.productBox .product .productDetail .text .num {
+    display: flex;
+    margin-right: 10px;
+}
+
+.productBox .product .productDetail .text .num div {
+    border: 1px solid #707070;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+}
+
+/* ----------------------------product-------------------------------- */
+.footer {
+    background-color: #ffaaaa;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.footer .allPrice {
+    margin: 0 20px 10px;
+    background-color: white;
+    display: flex;
+    height: 56px;
+    line-height: 56px;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.footer .allPrice .text {
+    flex: 1
+}
+
+.footer .buy {
+    margin: 0 20px;
+    display: flex;
+}
+
+.footer .buy div {
+    width: 50%;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+}
+
+.footer .buy .more {
+    margin-right: 10px;
+}
+
+/* ----------------------------footer-------------------------------- */

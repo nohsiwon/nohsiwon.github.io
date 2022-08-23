@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+/* ----------------------------common-------------------------------- */
+.header {
+    display: flex;
+    padding: 0 20px;
+    height: 70px;
+    background-color: #ffaaaa;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .ham {
+    font-size: 40px;
+}
+
+.header .hamMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    overflow: scroll;
+    transition: 0.3s;
+}
+
+.header .hamMenu .hamClose {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 27px;
+}
+
+.header .hamMenu .img {
+    display: block;
+    width: 100px;
+    margin: 36px auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header .hamMenu .profile {
+    text-align: center;
+    color: white;
+}
+
+.header .hamMenu .login {
+    display: block;
+    background-color: yellow;
+    width: calc(100% - 40px);
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30.5px;
+    margin: 10px 20px;
+}
+
+.header .hamMenu .signup {
+    background-color: white;
+    width: calc(100% - 40px);
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30.5px;
+    margin: 0 20px 10px;
+}
+
+.header .hamMenu .list {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+
+.header .hamMenu .list .hamIcon {
+    font-size: 40px;
+    margin-right: 23px;
+}
+
+.header .hamMenu .list .hamText {
+    line-height: 54px;
+    color: white;
+}
+
+#ham {
+    display: none;
+}
+
+#ham:checked~.hamMenu {
+    left: 0
+}
+
+#ham~.hamMenu {
+    left: -100%;
+    background-color: #ffaaaa;
+    z-index: 1;
+}
+
+.header .icon {
+    font-size: 40px;
+}
+
+.header .logo {
+    height: 54px;
+}
+
+.header .logo img {
+    width: auto;
+    height: 100%;
+}
+
+/* ---------------------------header-------------------------------- */
+.routeBox {
+    margin: 0 20px;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.routeBox .route {
+    display: flex;
+}
+
+.routeBox .route i {
+    margin-right: 20px;
+}
+
+.routeBox .route .text {
+    font-size: 20px;
+    font-weight: bold;
+    height: 36px;
+    line-height: 36px;
+}
+
+/* ---------------------------route------------------------------- */
+.menu {
+    height: 47px;
+    background-color: #ff0000;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu label {
+    display: block;
+    width: 50%;
+    height: 34px;
+    margin: 0 1%;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 34px;
+    background-color: white;
+}
+
+#one,
+#set {
+    display: none;
+}
+
+#one:checked~.menu .one,
+#set:checked~.menu .set {
+    background-color: #ffaaaa;
+}
+
+#one:checked~.oneBox {
+    display: block;
+}
+
+#one~.oneBox {
+    display: none;
+}
+
+#set:checked~.setBox {
+    display: block;
+}
+
+#set~.setBox {
+    display: none;
+}
+
+/* ---------------------------menu_choice------------------------------- */
+.oneBox,
+.setBox {
+    margin: 0 20px;
+}
+
+.oneBox .product,
+.setBox .product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.oneBox .product .img,
+.setBox .product .img {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.oneBox .product .text,
+.setBox .product .text {
+    flex: 2;
+}
+
+.oneBox .product .text .name,
+.setBox .product .text .name {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.oneBox .product .text .sub,
+.setBox .product .text .sub {
+    font-size: 12px;
+    color: #575757;
+}
+
+.oneBox .product .text .price,
+.setBox .product .text .price {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.detail {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* ---------------------------product------------------------------- */
+.wingBox {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: calc(80% + 40px);
+    height: 100vh;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.fixed {
+    margin-bottom: 80px;
+    margin-top: auto;
+}
+
+.fixBox .icon {
+    font-size: 40px;
+    background-color: #ffaaaa7e;
+
+}
+
+.fixedMenu {
+    width: calc(100% + 40px);
+    font-size: 20px;
+    background-color: #ffaaaa;
+    overflow: scroll;
+}
+
+.fixedMenu .allMenu {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 20px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.fixedMenu .me {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.fixedMenu .me .box .link {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.fixedMenu .me .box .link a {
+    width: calc(50% - 5px);
+    padding-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.fixedMenu .me .box .link a:nth-child(1),
+.fixedMenu .me .box .link a:nth-child(3) {
+    margin-right: 10px;
+}
+
+.fixedMenu .me .box .link .fixImg {
+    margin: 10px auto;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.fixedMenu .me .box .link .fixImg i {
+    font-size: 60px;
+    height: 80px;
+    line-height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixedMenu .me .box .link .fixImg .profileImg {
+    width: 60px;
+    margin: 10px auto 0;
+}
+
+.fixedMenu .me .top {
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.qnaBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.qnaBox a {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.qna {
+    margin-bottom: 10px;
+    border: 1px solid black;
+    font-weight: 100;
+}
+
+.help {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 100;
+}
+
+.fixedClose {
+    margin-top: 46px;
+    color: white;
+    font-size: 20px;
+}
+
+#fixed {
+    display: none;
+}
+
+#fixed:checked~.wingBox {
+    right: calc(0px)
+}
+
+#fixed~.wingBox {
+    right: calc(-80%)
+}
+
+/* ----------------------------fixed-------------------------------- */
+.footer {
+    background-color: #ffaaaa;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.footer .footerTop {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer .footerTop>div {
+    width: 33.333333%
+}
+
+.footer .footerTop .logo img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.footer .footerText {
+    margin-bottom: 20px;
+}
+
+.footer .copyright {
+    color: #707070;
+    font-size: 10px;
+}
+
+.footer .sns {
+    display: flex;
+    justify-content: right;
+    font-size: 30px;
+}
+
+.footer .sns div {
+    margin-left: 15px;
+    color: white;
+}
+
+/* ------------------------------footer------------------------------ */

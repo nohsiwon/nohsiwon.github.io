@@ -1,0 +1,1017 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #78ECC5;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "GentleMonster Condensed";
+    src: url("04b98e0c477863adcdaae7d4d98c063a.eot");
+    src: url("04b98e0c477863adcdaae7d4d98c063a.eot?#iefix") format("embedded-opentype"),
+        url("04b98e0c477863adcdaae7d4d98c063a.woff2") format("woff2"),
+        url("04b98e0c477863adcdaae7d4d98c063a.woff") format("woff"),
+        url("04b98e0c477863adcdaae7d4d98c063a.ttf") format("truetype")
+}
+
+/* ---common--- */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 77px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.header .logo {
+    width: 250px;
+    font-size: 24px;
+    margin-left: 50px;
+    font-family: "GentleMonster Condensed";
+}
+
+.header .gnb {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.header .gnb li {
+    width: 100px;
+    text-align: center;
+}
+
+
+.header .fullDownMenuBox {
+    position: fixed;
+    top: 77px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    display: flex;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.header .fullDownMenuBox .fullDownMenu {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.header .fullDownMenuBox .fullDownMenu>div {
+    width: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header .fullDownMenuBox .fullDownMenu>div>div {
+    margin-bottom: 10px;
+}
+
+.header .fullDownMenuBox .empty1 {
+    width: 250px;
+    margin-left: 50px;
+}
+
+.header .fullDownMenuBox .empty2 {
+    width: 250px;
+    margin-right: 50px;
+}
+
+.header .lnb {
+    display: flex;
+    width: 250px;
+    font-size: 12px;
+    margin-right: 50px;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .lnb i {
+    font-size: 15px;
+}
+
+.header .searchBack {
+    position: absolute;
+    top: 77px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    transition: all 0.3s;
+}
+
+.header .searchBackOpen {
+    height: 480px;
+}
+
+.header .searchBack .search {
+    width: 1394px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+.header .searchBack .search .searchTitle {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .searchBack .search .searchActive {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.header .searchBack .search .searchActive .searchInput {
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 0 5px;
+    border: 2px solid black;
+    transition: all 0.3s;
+}
+
+.header .searchBack .search .searchActive .icon {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.header .searchBack .search .best {
+    margin-top: 15px;
+}
+
+.header .searchBack .search .best .bestTitle {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header .searchBack .search .best .bestImg {
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.header .searchBack .search .best .bestImg>div .img {
+    width: 150px;
+}
+
+.header .searchBack .search .best .bestImg>div .img img {
+    width: 100%;
+}
+
+/* ---header--- */
+
+.visualBack {
+    width: 100%;
+    height: 650px;
+    background: url(../img/visualBack.png);
+    margin-bottom: 273px;
+    position: relative;
+}
+
+.visualMainBox {
+    width: 1394px;
+    margin: 0 auto;
+    padding-top: 139px;
+}
+
+.visualMainBox .swiper-slide {
+    position: relative;
+}
+
+.visualMainBox .text {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    mix-blend-mode: overlay;
+    mix-blend-mode: difference;
+}
+
+
+.visualBack .swiper-button-prev {
+    position: absolute;
+    top: 60%;
+    left: calc(50% - 774px);
+    color: #78ECC5;
+}
+
+.visualBack .swiper-button-next {
+    position: absolute;
+    top: 60%;
+    right: calc(50% - 774px);
+    color: #78ECC5;
+}
+
+.visualBack .swiper-pagination {
+    position: absolute;
+    bottom: -80px;
+}
+
+.visualBack .swiper-pagination-bullet-active {
+    background-color: #78ECC5;
+}
+
+.visualBack .swiperControl {
+    position: absolute;
+    bottom: -83px;
+    left: calc(50% + 50px);
+    transform: translateX(-50%);
+    color: #78ECC5;
+    z-index: 99;
+}
+
+.visualBack .swiperControl .play {
+    display: none;
+}
+
+/* ---visualMain--- */
+
+.rankBox {
+    width: 1394px;
+    height: 600px;
+    margin: 0 auto 130px;
+    display: flex;
+}
+
+.rankBox .keyword {
+    width: 370px;
+    margin-right: 98px;
+}
+
+.rankBox .keyword .keywordTitle {
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.rankBox .keyword>div .product {
+    display: flex;
+}
+
+.rankBox .keyword .keywordProductBox>div {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.rankBox .keyword .keywordProductBox>div:hover .product .productTitle {
+    font-weight: bold;
+}
+
+.rankBox .keyword .keywordProductBox>div:hover .product .more {
+    display: block;
+}
+
+.rankBox .keyword .keywordProductBox>div .productImgBox {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    display: flex;
+}
+
+.rankBox .keyword .keywordProductBox>div .first {
+    height: 94px;
+}
+
+.rankBox .keyword>div .product .productTitle {
+    flex: 1;
+}
+
+.rankBox .keyword>div .product .more {
+    display: none;
+}
+
+.rankBox .keyword>div .productImgBox>div {
+    margin-left: 4px;
+    height: 94px;
+}
+
+.rankBox .rankImgBox {
+    flex: 2;
+}
+
+.rankBox .rankImgBox>div {
+    display: none;
+}
+
+.rankBox .rankImgBox>div:first-child {
+    display: flex;
+}
+
+.rankBox .rankImgBox>div .big {
+    margin-right: 10px;
+}
+
+.rankBox .rankImgBox>div .small {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rankBox .rankImgBox>div .small .text {
+    width: 224px;
+    height: 271px;
+}
+
+.rankBox .rankImgBox>div .small div:nth-child(1),
+.rankBox .rankImgBox>div .small div:nth-child(3) {
+    margin-right: 10px;
+}
+
+/* ---rankBox--- */
+
+
+.productBox .productBoxTitle {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+
+.productBox .productTab {
+    width: 280px;
+    display: flex;
+    margin: 0 auto 14px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.productBox .productTab .sun {
+    flex: 1;
+    color: #9E9E9E;
+}
+
+.productBox .productTab .glass {
+    color: #9E9E9E;
+}
+
+#sun,
+#glass {
+    display: none;
+}
+
+.sunImg {
+    display: none;
+}
+
+.glassImg {
+    display: none;
+}
+
+#sun:checked~.product .sunImg {
+    display: flex;
+}
+
+#glass:checked~.product .glassImg {
+    display: flex;
+}
+
+#sun:checked~.productTab .sun {
+    color: black;
+}
+
+#glass:checked~.productTab .glass {
+    color: black;
+}
+
+.productBox .product>div>div>div {
+    width: 224px;
+}
+
+.productBox .product>div>div .proImgBox {
+    position: relative;
+}
+
+.productBox .product>div>div .proImgBox:hover .hoverImg {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.productBox .product>div>div .proImgBox .hoverImg>div .hoverShopOn,
+.productBox .product>div>div .proImgBox .hoverImg>div .hoverHeartOn {
+    display: none;
+}
+
+.productBox .product>div>div .hoverImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.productBox .product>div>div .hoverImg>div:first-child {
+    margin-right: 15px;
+}
+
+.productBox .product>div>div .proTextBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.productBox .product>div>div .proTextBox .proName {
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.productBox .product>div>div .proTextBox .price {
+    font-size: 14px;
+}
+
+/* ---productBox--- */
+
+.bannerBox {
+    height: 500px;
+    background-image: url(../img/bannerBack.jpg);
+    background-attachment: fixed;
+    margin-top: 140px;
+}
+
+.bannerBox .bannerBack {
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bannerBox .bannerFront {
+    text-align: center;
+    padding-top: 160px;
+}
+
+.bannerBox .bannerText {
+    margin-top: 46px;
+    text-align: center;
+    color: white;
+}
+
+.bannerBox .bannerText .bannerTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bannerBox .bannerText .bannerDetail {
+    font-size: 20px;
+}
+
+/* ---bannerBox--- */
+
+.collaboBox .collaboTitle {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 120px 0;
+}
+
+.collaboBox .collabo {
+    display: flex;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.collaboBox .collabo>label {
+    display: flex;
+    flex: 1;
+}
+
+.collaboBox .jenny .collaboBtn {
+    height: 700px;
+    background: url(../img/collabo_01_01.png);
+}
+
+.collaboBox .moncler .collaboBtn {
+    height: 700px;
+    background: url(../img/collabo_02_01.png);
+}
+
+.collaboBox .son .collaboBtn {
+    height: 700px;
+    background: url(../img/collabo_03_01.png);
+}
+
+.collaboBox .ykjeong .collaboBtn {
+    height: 700px;
+    background: url(../img/collabo_04_01.png);
+}
+
+.collaboBox .collaboBtn .collaboBack {
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.collaboBox .collabo>label .collaboBtn {
+    flex: 1;
+    font-size: 40px;
+    overflow: hidden;
+    mix-blend-mode: overlay;
+}
+
+.collaboBox .collabo>label .collaboBtn .ver {
+    width: 30px;
+    margin: 0 auto;
+    padding-top: 90px;
+    word-break: break-all;
+    text-align: center;
+    color: white;
+    mix-blend-mode: overlay;
+    mix-blend-mode: difference;
+}
+
+.collaboBox .collabo>label .collaboDetail {
+    display: flex;
+    height: 700px;
+    overflow: hidden;
+}
+
+.collaboBox .collabo>label .collaboDetail .Img {
+    width: 700px;
+}
+
+.collaboBox .collabo>label .collaboDetail .Text {
+    width: 344px;
+    height: 100%;
+    text-align: center;
+    padding: 90px 25px 0;
+    background-color: white;
+}
+
+.collaboBox .collabo>label .collaboDetail .Text .title {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.collaboBox .collabo>label .collaboDetail .Text .detail {
+    font-size: 15px;
+}
+
+.collaboBox .collabo>label .collaboDetail .Text .title div:nth-child(2) {
+    margin: 20px 0;
+}
+
+#jenny,
+#moncler,
+#son,
+#ykjeong {
+    display: none;
+}
+
+#jenny:checked~.collabo .jenny .collaboDetailBox {
+    width: 100%;
+    transition: all 0.7s;
+}
+
+#jenny:checked~.collabo .jenny .collaboDetailBox .Text {
+    opacity: 1;
+    transition: all 0.7s 0.7s
+}
+
+#jenny:checked~.collabo .jenny .collaboBtn {
+    width: 0;
+    transition: all 0.7s;
+}
+
+#moncler:checked~.collabo .moncler .collaboDetailBox {
+    width: 100%;
+    transition: all 0.7s;
+
+}
+
+#moncler:checked~.collabo .moncler .collaboDetailBox .Text {
+    opacity: 1;
+    transition: all 0.7s 0.7s
+}
+
+#moncler:checked~.collabo .moncler .collaboBtn {
+    width: 0;
+    transition: all 0.7s;
+}
+
+
+#son:checked~.collabo .son .collaboDetailBox {
+    width: 100%;
+    transition: all 0.7s;
+}
+
+#son:checked~.collabo .son .collaboDetailBox .Text {
+    opacity: 1;
+    transition: all 0.7s 0.7s
+}
+
+#son:checked~.collabo .son .collaboBtn {
+    width: 0;
+    transition: all 0.7s;
+}
+
+#ykjeong:checked~.collabo .ykjeong .collaboDetailBox {
+    width: 100%;
+    transition: all 0.7s;
+}
+
+#ykjeong:checked~.collabo .ykjeong .collaboDetailBox .Text {
+    opacity: 1;
+    transition: all 0.7s 0.7s
+}
+
+#ykjeong:checked~.collabo .ykjeong .collaboBtn {
+    width: 0;
+    transition: all 0.7s;
+    animation-direction: normal;
+}
+
+
+.collabo label .collaboDetailBox {
+    width: 0;
+}
+
+.collabo label .collaboDetailBox .Text {
+    opacity: 0;
+}
+
+/* ---collaboBox--- */
+
+.youtubeBox {
+    margin-bottom: 160px;
+}
+
+.youtubeBox .youtubeTitle {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 140px 0 50px;
+}
+
+.youtubeBox .youtube {
+    width: 100%;
+    display: flex;
+    background-color: #EEEEEE;
+}
+
+.youtubeBox .youtube .text {
+    width: 650px;
+    margin-top: 130px;
+    margin-left: 45px;
+}
+
+.youtubeBox .youtube .text .title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.youtubeBox .youtube .text .detail {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.youtubeBox .youtube .text .en {
+    font-size: 20px;
+    color: #aaa;
+}
+
+.youtubeBox .youtube .text .check {
+    text-align: right;
+    margin-top: 50px;
+    color: #707070;
+    font-size: 14px;
+}
+
+/* ---youtubeBox--- */
+
+.snsBox {
+    width: 776px;
+    height: 776px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    gap: 10px;
+}
+
+.snsBox .see {
+    width: 252px;
+    height: 252px;
+    overflow: hidden;
+    position: relative;
+}
+
+.snsBox .see .move>div {
+    width: 252px;
+    height: 252px;
+}
+
+.snsBox .see .move1,
+.snsBox .see .move2,
+.snsBox .see .move8,
+.snsBox .see .move9 {
+    display: flex;
+    width: 2016px;
+}
+
+.snsBox .logo {
+    width: 252px;
+    height: 252px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: "GentleMonster Condensed";
+}
+
+
+.snsBox>div img {
+    width: 100%;
+    height: 100%;
+}
+
+.snsBox .see .move {
+    transition: all 0.5s;
+}
+
+.snsBox .see .move1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.snsBox .see .move2 {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.snsBox .see .move3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.snsBox .see .move6 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.snsBox .see .move4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.snsBox .see .move7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.snsBox .see .move8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.snsBox .see .move9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* ---snsBox--- */
+
+.fixedBox {
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    z-index: 9999;
+}
+
+.fixedBox>div {
+    width: 48px;
+    height: 48px;
+    line-height: 60px;
+    text-align: center;
+    border: 2px solid #EBEBEB;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.fixedBox>div:hover {
+    border: 2px solid black;
+    line-height: 58px;
+}
+
+.fixedBox>div .fixedOn {
+    display: none;
+}
+
+/* ---fixedBox---*/
+
+.shoppingBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    opacity: 0;
+    z-index: 999999;
+}
+
+.shoppingBox .shopping {
+    display: flex;
+    flex-direction: column;
+    width: 482px;
+    height: 100vh;
+    margin-left: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.shoppingBox .shopping .titleBox {
+    display: flex;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.shoppingBox .shopping .titleBox .title {
+    flex: 1;
+}
+
+.shoppingBox .shopping .items {
+    height: 100vh;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.shoppingBox .shopping .buyBox {
+    padding: 30px 0;
+}
+
+.shoppingBox .shopping .buyBox .deli {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px
+}
+
+.shoppingBox .shopping .buyBox .sum {
+    display: flex;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.shoppingBox .shopping .buyBox>div>div:first-child {
+    flex: 1;
+}
+
+.shoppingBox .shopping .buyBox .buy {
+    background-color: #707070;
+    color: white;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.shoppingBox .shopping .buyBox .more {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #707070;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ---shoppingBox--- */
+
+.footer {
+    padding: 0 50px;
+    background-color: black;
+    color: white;
+}
+
+.footer .footerTop {
+    display: flex;
+    padding-top: 50px;
+    margin-bottom: 90px;
+}
+
+.footer .footerTop .logo {
+    flex: 1;
+}
+
+.footer .footerTop .logo img {
+    width: auto
+}
+
+.footer .footerTop .menuBox {
+    display: flex;
+    width: 600px;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.searchText {
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.searchText:focus {
+    outline: none;
+}
+
+.footer .footerTop .menuBox .menu {
+    flex: 1;
+}
+
+.footer .footerTop .menuBox .menu .title {
+    font-size: 16px;
+}
+
+.footer .footerTop .menuBox .menu div {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer .footerTop .menuBox .menu div:last-child {
+    margin-bottom: 0px;
+}
+
+.footer .footerBottom {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    color: #807E7E;
+    padding-bottom: 70px;
+    align-items: center;
+}
+
+.footer .footerBottom .copyright {
+    width: 220px;
+}
+
+.footer .footerBottom .infoBox {
+    width: 100%;
+    display: flex;
+    border-left: 1px solid #807E7E;
+}
+
+.footer .footerBottom .infoBox .info {
+    flex: 1;
+    margin-left: 50px;
+}
+
+.footer .footerBottom .infoBox .info>div {
+    display: flex;
+}

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <title>mainPage</title>
+</head>
+
+<body>
+    <header class="headerOuter">
+        <header class="header">
+            <input type="checkbox" id="my">
+            <label for="my" class="myBtn"><i class="xi-bars"></i></label>
+            <section class="myBox">
+                <div class="contents">
+                    <div class="myHeader">
+                        <label for="my" class="icon"><i class="xi-close"></i></label>
+                        <div class="myTitle">MY</div>
+                    </div>
+                    <div class="loginBox">
+                        <div class="benefit">회원이 되시면<br>더 많은 혜택을 누릴수 있어요 !</div>
+                        <div class="login">
+                            <div class="loginBtn">로그인</div>
+                            <div class="line"></div>
+                            <div class="signup">회원가입</div>
+                        </div>
+                    </div>
+                    <div class="myContents">
+                        <div class="first">
+                            <div class="title">놀러가기</div>
+                            <div class="link">
+                                <div class="left">
+                                    <div>
+                                        추천
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div>
+                                        내주변
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="title">내 정보</div>
+                            <div class="link">
+                                <div class="left">
+                                    <div>예약 내역</div>
+                                    <div>쿠폰함</div>
+                                    <div>설정</div>
+                                </div>
+                                <div class="right">
+                                    <div>찜</div>
+                                    <div>포인트</div>
+                                    <div>내 정보 수정</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- myBox -->
+
+            <div class="logo">
+                여기어때.
+            </div>
+
+            <!-- logo -->
+
+            <div class="search">
+                <div class="text">지금 여행 가자 !</div>
+                <div class="icon"><i class="xi-search"></i></div>
+            </div>
+
+            <!-- search -->
+
+            <div class="loginLink">로그인</div>
+
+            <input type="checkbox" id="lnb">
+            <label for="lnb" class="lnbBtn"><i class="xi-apps"></i></label>
+            <section class="lnbBox">
+                <div class="contents">
+                    <div class="lnbHeader">
+                        <div class="lnbTitle">MENU</div>
+                        <label for="lnb" class="icon"><i class="xi-close"></i></label>
+                    </div>
+                    <div id="accordion">
+                        <h3 class="title">
+                            <div class="text">국내여행</div>
+                            <div class="icon"><i class="xi-angle-down"></i></div>
+                        </h3>
+                        <div class="list">
+                            <div class="left">
+                                <div>호텔</div>
+                                <div>모텔</div>
+                                <div>펜션</div>
+                                <div>리조트</div>
+                            </div>
+                            <div class="right">
+                                <div>게스트하우스</div>
+                                <div>캠핑 · 글램핑</div>
+                                <div>한옥</div>
+                            </div>
+                        </div>
+                        <h3 class="title">
+                            <div class="text">즐길거리</div>
+                            <div class="icon"><i class="xi-angle-down"></i></div>
+                        </h3>
+                        <div class="list">
+                            <div class="left">
+                                <div>레저</div>
+                                <div>맛집</div>
+                            </div>
+                            <div class="right">
+                                <div>테마파크</div>
+                                <div>아쿠아리움</div>
+                            </div>
+                        </div>
+                        <h3 class="title">
+                            <div class="text">교통</div>
+                            <div class="icon"><i class="xi-angle-down"></i></div>
+                        </h3>
+                        <div class="list">
+                            <div class="left">
+                                <div>기차</div>
+                                <div>렌트카</div>
+                            </div>
+                            <div class="right">
+                                <div>고속버스</div>
+                                <div>항공권</div>
+                            </div>
+                        </div>
+                        <h3 class="title">
+                            <div class="text">해외여행</div>
+                            <div class="icon"><i class="xi-angle-down"></i></div>
+                        </h3>
+                        <div class="list">
+                            <div class="left">
+                                <div>해외숙소</div>
+                                <div>해외 항공권</div>
+                            </div>
+                            <div class="right">
+                                <div>해외 여행자보험</div>
+                            </div>
+                        </div>
+                        <h3 class="title">
+                            <div class="text">소식</div>
+                            <div class="icon"><i class="xi-angle-down"></i></div>
+                        </h3>
+                        <div class="list">
+                            <div class="left">
+                                <div>공지사항</div>
+                                <div>이벤트</div>
+                            </div>
+                            <div class="right">
+                                <div>자주 묻는 질문</div>
+                                <div>1:1 문의</div>
+                                <div>약관 및 정책</div>
+                            </div>
+                        </div>
+                        <h3 class="title">
+                            <div class="text">MY</div>
+                            <div class="icon"><i class="xi-angle-down"></i></div>
+                        </h3>
+                        <div class="list">
+                            <div class="left">
+                                <div>내 정보</div>
+                                <div>예약 내역</div>
+                                <div>상품권 및 쿠폰함</div>
+                            </div>
+                            <div class="right">
+                                <div>찜</div>
+                                <div>고객센터</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- lnbBox -->
+
+
+            <section class="webLnbBox">
+                <div class="webLnbOuter">
+                    <div class="webLnb">
+                        <div class="listBox">
+                            <div class="title">국내여행</div>
+                            <div class="list">
+                                <div>호텔</div>
+                                <div>모텔</div>
+                                <div>펜션</div>
+                                <div>리조트</div>
+                                <div>게스트하우스</div>
+                                <div>캠핑 · 글램핑</div>
+                                <div>한옥</div>
+                            </div>
+                        </div>
+                        <div class="listBox">
+                            <div class="title">즐길거리</div>
+                            <div class="list">
+                                <div>레저</div>
+                                <div>맛집</div>
+                                <div>테마파크</div>
+                                <div>아쿠아리움</div>
+                            </div>
+                        </div>
+                        <div class="listBox">
+                            <div class="title">교통</div>
+                            <div class="list">
+                                <div>기차</div>
+                                <div>렌트카</div>
+                                <div>고속버스</div>
+                                <div>항공권</div>
+                            </div>
+                        </div>
+                        <div class="listBox">
+                            <div class="title">해외여행</div>
+                            <div class="list">
+                                <div>해외 숙소</div>
+                                <div>해외 항공권</div>
+                                <div>해외 여행자보험</div>
+                            </div>
+                        </div>
+                        <div class="listBox">
+                            <div class="title">소식</div>
+                            <div class="list">
+                                <div>공지사항</div>
+                                <div>이벤트</div>
+                                <div>자주 묻는 질문</div>
+                                <div>1:1 문의</div>
+                                <div>약관 및 정책</div>
+                            </div>
+                        </div>
+                        <div class="listBox">
+                            <div class="title">MY</div>
+                            <div class="list">
+                                <div>내 정보</div>
+                                <div>예약 내역</div>
+                                <div>상품권 및 쿠폰함</div>
+                                <div>찜</div>
+                                <div>고객센터</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- webLnbBox -->
+
+        </header>
+    </header>
+
+    <!-- header -->
+    <section class="mainVisualBox">
+        <div class="mainVisual">
+            <picture>
+                <source media="(min-width:769px)" srcset="img/main_visual_01_web.png">
+                <img src="img/main_visual_01.png" style="width:100%" alt="">
+            </picture>
+            <picture>
+                <source media="(min-width:769px)" srcset="img/main_visual_02_web.png">
+                <img src="img/main_visual_02.png" style="width:100%" alt="">
+            </picture>
+            <picture>
+                <source media="(min-width:769px)" srcset="img/main_visual_03_web.png">
+                <img src="img/main_visual_03.png" style="width:100%" alt="">
+            </picture>
+        </div>
+        <div class="visualPrev"><i class="xi-arrow-left"></i></div>
+        <div class="visualNext"><i class="xi-arrow-right"></i></div>
+    </section>
+
+    <!-- mainVisual -->
+
+    <div class="wrap">
+        <section class="shortcutBox">
+            <div class="shortcutGroup">
+                <div class="shortcut">
+                    <div class="img"><img src="img/link_01.png" alt=""></div>
+                    <div class="text">모텔</div>
+                </div>
+                <div class="shortcut">
+                    <div class="img"><img src="img/link_02.png" alt=""></div>
+                    <div class="text">호텔</div>
+                </div>
+                <div class="shortcut">
+                    <div class="img"><img src="img/link_03.png" alt=""></div>
+                    <div class="text">펜션</div>
+                </div>
+            </div>
+            <div class="shortcutGroup">
+                <div class=" shortcut">
+                    <div class="img"><img src="img/link_04.png" alt=""></div>
+                    <div class="text">리조트</div>
+                </div>
+                <div class="shortcut">
+                    <div class="img"><img src="img/link_05.png" alt=""></div>
+                    <div class="text">게스트하우스</div>
+                </div>
+                <div class="shortcut">
+                    <div class="img"><img src="img/link_06.png" alt=""></div>
+                    <div class="text">캠핑 · 글램핑</div>
+                </div>
+            </div>
+            <div class="shortcutGroup">
+                <div class=" shortcut">
+                    <div class="img"><img src="img/link_07.png" alt=""></div>
+                    <div class="text">한옥</div>
+                </div>
+                <div class="shortcut">
+                    <div class="img"><img src="img/link_08.png" alt=""></div>
+                    <div class="text">내주변</div>
+                </div>
+                <div class="shortcut">
+                    <div class="img"><img src="img/link_09.png" alt=""></div>
+                    <div class="text">페이백</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- chortcut -->
+
+        <section class="travelBox">
+            <div class="title">지금 당장 여행가기 !</div>
+            <div class="productBox">
+                <div class="product">
+                    <div class="img">
+                        <div><img src="img/product_01.png" alt=""></div>
+                        <div class="back b1">
+                            <div>맑은 공기,<br>깨끗한 자연</div>
+                        </div>
+                    </div>
+                    <div class="text">강원도</div>
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <div><img src="img/product_02.png" alt=""></div>
+                        <div class="back b2">
+                            <div>
+                                한국의 역사와 전통
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">경상북도</div>
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <div><img src="img/product_03.png" alt=""></div>
+                        <div class="back b3">
+                            <div>
+                                시원한 바람,<br>넓고 예쁜 바다
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">부산</div>
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <div><img src="img/product_04.png" alt=""></div>
+                        <div class="back b4">
+                            <div>신비로운 자연경관,<br>맛있는 먹거리</div>
+                        </div>
+                    </div>
+                    <div class="text">제주도</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- travelBox -->
+
+        <section class="saleBox">
+            <div class="titleBox">
+                <div class="title">오늘의 특가</div>
+                <div class="icon"><i class="xi-plus"></i></div>
+            </div>
+            <div class="slideBox">
+                <div class="slide">
+                    <div><img src="img/sale_01.png" alt=""></div>
+                    <div><img src="img/sale_02.png" alt=""></div>
+                    <div><img src="img/sale_03.png" alt=""></div>
+                    <div><img src="img/sale_04.png" alt=""></div>
+                </div>
+                <div class="salePrev"><i class="xi-arrow-left"></i></div>
+                <div class="saleNext"><i class="xi-arrow-right"></i></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- saleBox -->
+
+    <section class="popularBox">
+        <div class="title">인기있는 장소</div>
+        <div class="popular">
+            <div class="big">
+                <div class="space"><img src="img/popular_08.png" alt=""></div>
+                <div class="imgBox">
+                    <div class="img img1"><img src="img/popular_01.png" alt=""></div>
+                    <div class="img img2"><img src="img/popular_02.png" alt=""></div>
+                    <div class="img img3"><img src="img/popular_03.png" alt=""></div>
+                    <div class="img img4"><img src="img/popular_04.png" alt=""></div>
+                    <div class="img img5"><img src="img/popular_05.png" alt=""></div>
+                    <div class="img img6"><img src="img/popular_06.png" alt=""></div>
+                    <div class="img img7"><img src="img/popular_07.png" alt=""></div>
+                    <div class="img img8"><img src="img/popular_08.png" alt=""></div>
+                </div>
+
+                <div class="sub sub1">역대급 인생샷 부산<br>하버뷰 호텔</div>
+                <div class="sub sub2">해운대 바로 앞 오션뷰<br>스파룸 호텔</div>
+                <div class="sub sub3">부산 가성비 바다 호텔<br>베스트웨스턴 송도</div>
+                <div class="sub sub4">개별 노천탕이 있는<br>서울근교 펜션</div>
+                <div class="sub sub5">프라이빗 풀 룸이 10만 원대인<br>제주호텔</div>
+                <div class="sub sub6">수영장부터 불멍까지 제주감성<br>독채 숙소</div>
+                <div class="sub sub7">나만 알고 싶은 제주 돌집<br>독채 숙소</div>
+                <div class="sub sub8">차원이 다른 오션뷰 르네블루<br>by 워커힐</div>
+
+                <div class="price price1">
+                    <div>#2인실 ~ 3인실 #하버뷰</div>
+                    <div>최저가 95,000₩ ~ </div>
+                </div>
+                <div class="price price2">
+                    <div>#2인실 #해운대 #스파</div>
+                    <div>최저가 147,000₩ ~ </div>
+                </div>
+                <div class="price price3">
+                    <div>#2인실 #가성비</div>
+                    <div>최저가 66,000₩ ~ </div>
+                </div>
+                <div class="price price4">
+                    <div>#2인실 ~ 5인실 #노천탕</div>
+                    <div>최저가 279,000₩ ~ </div>
+                </div>
+                <div class="price price5">
+                    <div>#2인실 ~ 4인실 #프라이빗 풀</div>
+                    <div>최저가 164,000₩ ~ </div>
+                </div>
+                <div class="price price6">
+                    <div>#4인실 ~ 12인실 #독채</div>
+                    <div>최저가 420,000₩ ~ </div>
+                </div>
+                <div class="price price7">
+                    <div>#2인실 ~ 7인실 #독채 #한팀</div>
+                    <div>최저가 900,000₩ ~ </div>
+                </div>
+                <div class="price price8">
+                    <div>#2인실 ~ 3인실 #자연</div>
+                    <div>최저가 270,000₩ ~ </div>
+                </div>
+            </div>
+            <div class="small">
+                <div class="one">
+                    <div class="onetop">
+                        <div class="po po1 imgon">
+                            <img src="img/popular_01.png" alt="">
+                            <div class="text texton">부산</div>
+                            <div class="choice"></div>
+                        </div>
+                        <div class="po po2">
+                            <img src="img/popular_02.png" alt="">
+                            <div class="text">부산</div>
+                            <div class="choice"></div>
+                        </div>
+                    </div>
+                    <div class="onebottom">
+                        <div class="po po3">
+                            <img src="img/popular_03.png" alt="">
+                            <div class="text">부산</div>
+                            <div class="choice"></div>
+                        </div>
+                        <div class="po po4">
+                            <img src="img/popular_04.png" alt="">
+                            <div class="text">서울</div>
+                            <div class="choice"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="twotop">
+                        <div class="po po5">
+                            <img src="img/popular_05.png" alt="">
+                            <div class="text">제주</div>
+                            <div class="choice"></div>
+                        </div>
+                        <div class="po po6">
+                            <img src="img/popular_06.png" alt="">
+                            <div class="text">제주</div>
+                            <div class="choice"></div>
+                        </div>
+                    </div>
+                    <div class="twobottom">
+                        <div class="po po7">
+                            <img src="img/popular_07.png" alt="">
+                            <div class="text">제주</div>
+                            <div class="choice"></div>
+                        </div>
+                        <div class="po po8">
+                            <img src="img/popular_08.png" alt="">
+                            <div class="text">강원도</div>
+                            <div class="choice"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smallPrev"><i class="xi-arrow-left"></i></div>
+            <div class="smallNext"><i class="xi-arrow-right"></i></div>
+        </div>
+    </section>
+
+    <!-- popularBox -->
+
+    <section class="categoryBox">
+        <div class="title">카테고리별 메뉴</div>
+        <div class="categoryOuter">
+            <div class="categoryInner">
+                <div class="product p1">
+                    <div class="img"><img src="img/category_01.png" alt=""></div>
+                    <div class="text">
+                        <div class="textTitle">국내여행</div>
+                        <div class="textList">호텔 / 모텔 / 펜션 / 리조트 / 게스트하우스</div>
+                    </div>
+                </div>
+                <div class="product p2">
+                    <div class="img"><img src="img/category_02.png" alt=""></div>
+                    <div class="text">
+                        <div class="textTitle">즐길거리</div>
+                        <div class="textList">레저 / 맛집 / 테마파크 / 아쿠아리움</div>
+                    </div>
+                </div>
+                <div class="product p3">
+                    <div class="img"><img src="img/category_03.png" alt=""></div>
+                    <div class="text">
+                        <div class="textTitle">교통</div>
+                        <div class="textList">기차 / 렌터카 / 고속버스 / 항공권</div>
+                    </div>
+                </div>
+                <div class="product p4">
+                    <div class="img"><img src="img/category_04.png" alt=""></div>
+                    <div class="text">
+                        <div class="textTitle">해외여행</div>
+                        <div class="textList">해외숙소 / 해외 항공권 / 해외 여행자보험</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- categoryBox -->
+
+    <section class="eventBox wrap">
+        <div class="titleBox">
+            <div class="title">이벤트</div>
+            <div class="icon"><i class="xi-plus"></i></div>
+        </div>
+        <div class="event">
+            <div><img src="img/event_01.jpg" alt=""></div>
+            <div><img src="img/event_02.jpg" alt=""></div>
+            <div><img src="img/event_03.jpg" alt=""></div>
+            <div><img src="img/event_04.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <!-- eventBox -->
+
+    <div class="top">
+        <div class="icon"><i class="xi-arrow-up"></i></div>
+    </div>
+
+    <!-- top -->
+
+    <footer class="footerOuter">
+        <footer class="footerInner">
+            <div class="logo">여기어때.</div>
+            <section class="text">
+                <div>(주) 여기어때컴퍼니</div>
+                <div class="addressBox">
+                    <div class="address">
+                        <div>주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층</div>
+                        <div>대표이사 : 정명훈</div>
+                        <div>사업자등록번호 : 742-86-00224</div>
+                    </div>
+                    <div class="address">
+                        <div class="border">통신판매번호 : 2017-서울강남-01779</div>
+                        <div>관광사업자 등록번호 : 제1026-24호</div>
+                        <div>전화번호 : 1670-6250</div>
+                    </div>
+                </div>
+                <div>전자우편주소 : help@goodchoice.kr</div>
+            </section>
+            <section class="snsBox">
+                <div><i class="xi-facebook-official"></i></div>
+                <div><i class="xi-twitter"></i></div>
+                <div><i class="xi-instagram"></i></div>
+            </section>
+            <section class="info text">
+                <div>회사소개</div>
+                <div>이용약관</div>
+                <div>개인정보처리방침</div>
+                <div>사업자 정보확인</div>
+                <div>여기어때 마케팅센터</div>
+                <div>액티비티 호스트센터</div>
+                <div>HOTEL 여기어때</div>
+                <div>콘텐츠산업진흥법에의한 표시</div>
+            </section>
+            <div class="copyright">Copyright GC COMPANY Corp. All rights reserved.</div>
+        </footer>
+    </footer>
+
+    <!-- footer -->
+</body>
+
+</html>

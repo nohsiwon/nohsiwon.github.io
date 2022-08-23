@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <title>shopping_basket</title>
+</head>
+
+<body>
+    <header class="header">
+        <input type="checkbox" id="ham">
+        <label for="ham" class="ham"><i class="xi-bars"></i></label>
+        <div class="hamMenu">
+            <label for="ham" class="hamClose"><i class="xi-close"></i></label>
+            <div class="profile">
+                <a href="#!" class="img"><img src="../img/profile.png" alt=""></a>
+                <div class="nickname">닉네임</div>
+                <div class="member">실버 회원</div>
+            </div>
+            <a href="../login/login.html" class="login">로그인</a>
+            <div class="signup">회원가입</div>
+
+            <a href="../menu/menu_01_01.html" class="list">
+                <div class="hamIcon"><i class="xi-list"></i></div>
+                <div class="hamText">메뉴</div>
+            </a>
+            <a href="#!" class="list">
+                <div class="hamIcon"><i class="xi-document"></i></div>
+                <div class="hamText">나의 주문</div>
+            </a>
+            <a href="#!" class="list">
+                <div class="hamIcon"><i class="xi-maker"></i></div>
+                <div class="hamText">주소 관리</div>
+            </a>
+            <a href="#!" class="list">
+                <div class="hamIcon"><i class="xi-gift-o"></i></div>
+                <div class="hamText">이벤트</div>
+            </a>
+            <a href="#!" class="list">
+                <div class="hamIcon"><i class="xi-profile-o"></i></div>
+                <div class="hamText">MY</div>
+            </a>
+            <a href="#!" class="list">
+                <div class="hamIcon"><i class="xi-cog"></i></div>
+                <div class="hamText">설정</div>
+            </a>
+        </div>
+        <a href="../main.html" class="logo"><img src="../img/logo.png" alt=""></a>
+        <a href="shop.html" class="icon"><i class="xi-cart-o"></i></a>
+    </header>
+    <!-- header -->
+    <div class="wrap">
+        <div class="title">장바구니</div>
+        <div class="choiceBox">
+            <input type="checkbox" id="choice">
+            <label for="choice" class="choice">전체선택</label>
+            <div class="delete">선택삭제</div>
+        </div>
+        <!-- choice -->
+        <div class="productBox">
+            <div class="product">
+                <input type="checkbox" id="productBtn1">
+                <div class="productDetail">
+                    <div class="imgBox">
+                        <label for="productBtn1">
+                            <div class="img"><img src="../img/product_01.jpg" alt=""></div>
+                        </label>
+                    </div>
+                    <div class="productText">
+                        <div class="name">유가네 닭갈비</div>
+                        <div class="text">
+                            <div class="num">
+                                <div>+</div>
+                                <div>2</div>
+                                <div>-</div>
+                            </div>
+                            <div class="price">₩ 17,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <input type="checkbox" id="productBtn2">
+                <div class="productDetail">
+                    <div class="imgBox">
+                        <label for="productBtn2">
+                            <div class="img"><img src="../img/add_01.jpg" alt=""></div>
+                        </label>
+                    </div>
+                    <div class="productText">
+                        <div class="name">볶음 공기</div>
+                        <div class="text">
+                            <div class="num">
+                                <div>+</div>
+                                <div>2</div>
+                                <div>-</div>
+                            </div>
+                            <div class="price">₩ 4,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <input type="checkbox" id="productBtn3">
+                <div class="productDetail">
+                    <div class="imgBox">
+                        <label for="productBtn3">
+                            <div class="img"><img src="../img/side_03.jpg" alt=""></div>
+                        </label>
+                    </div>
+                    <div class="productText">
+                        <div class="name">날치마요주먹밥</div>
+                        <div class="text">
+                            <div class="num">
+                                <div>+</div>
+                                <div>1</div>
+                                <div>-</div>
+                            </div>
+                            <div class="price">₩ 4,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- product -->
+    </div>
+    <!-- wrap -->
+    <footer class="footer">
+        <div class="allPrice">
+            <div class="text">총 가격</div>
+            <div class="num">₩ 25,000</div>
+        </div>
+        <div class="buy">
+            <div class="more"><a href="../menu/menu_01_01.html"> 더 구매하기</a></div>
+            <div class="order"><a href="#!">주문하기</a></div>
+        </div>
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>
